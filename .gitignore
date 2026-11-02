@@ -1,0 +1,90 @@
+# ==========================================
+# Spring Boot & Maven Build Artifacts
+# ==========================================
+target/
+**/target/
+build/
+**/build/
+HELP.md
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ==========================================
+# Database & Docker Volume Data Directories
+# ==========================================
+# MySQL container data
+mysql/
+**/mysql/
+*.ibd
+*.dblwr
+*.sdi
+binlog.*
+# MongoDB container data
+data/
+**/data/
+_tmp/
+mongod.lock
+*.wt
+*.turtle
+# Keycloak / Docker volume storage
+volume-data/
+**/volume-data/
+
+# ==========================================
+# IntelliJ IDEA
+# ==========================================
+.idea/
+**/.idea/
+*.iml
+**/*.iml
+*.iws
+*.ipr
+out/
+**/out/
+
+# ==========================================
+# Eclipse / Spring Tool Suite (STS)
+# ==========================================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# ==========================================
+# VS Code
+# ==========================================
+.vscode/
+**/.vscode/
+
+# ==========================================
+# Logs & Test Dumps
+# ==========================================
+*.log
+**/logs/
+*.dump
+*.dumpstream
+hs_err_pid*
+replay_pid*
+
+# ==========================================
+# OS & System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+*.local
