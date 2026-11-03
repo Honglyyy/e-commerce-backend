@@ -3,7 +3,7 @@ services:
     container_name: keycloak-mysql
     image: mysql:latest
     volumes:
-      - ./volume-data/mysql_keycloak_data:/var/lib/mysql
+      - api-gateway-mysql-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: keycloak
@@ -27,3 +27,5 @@ services:
       - ./docker/keycloak/realms/:/opt/keycloak/data/import/
     depends_on:
       - keycloak-mysql
+volumes:
+  api-gateway-mysql-data:
